@@ -1,7 +1,6 @@
-// pages/api/contact.ts
 import { NextApiRequest, NextApiResponse } from 'next';
-import { connectToDatabase } from '@/lib/mongodb'; // Import your MongoDB connection helper
-import { Contact } from '@/models/contact';
+import { connectToDatabase } from '@/lib/mongodb'; // Your MongoDB connection helper
+import { ContactModel } from '@/lib/models/contact'; // Use the named export
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
@@ -10,7 +9,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             const { name, email, contact, industry, message } = req.body;
 
             // Create a new contact entry
-            const newContact = new Contact({
+            const newContact = new ContactModel({
                 name,
                 email,
                 contact,

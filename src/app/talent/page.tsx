@@ -80,7 +80,7 @@ const Talent = () => {
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
-                <img
+                <Image
                   className="w-full max-lg:max-w-xs"
                   src="https://tailwindui.com/plus/img/component-images/bento-03-performance.png"
                   alt=""
@@ -99,7 +99,7 @@ const Talent = () => {
                 </p>
               </div>
               <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
-                <img
+                <Image
                   className="h-[min(152px,40cqw)] object-cover object-center"
                   src="https://tailwindui.com/plus/img/component-images/bento-03-security.png"
                   alt=""

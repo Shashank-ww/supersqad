@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import MaxWidthWrapper from "@/components/maxwidthwrapper";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 export default function Digital() {
     return (

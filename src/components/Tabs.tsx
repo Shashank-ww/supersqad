@@ -101,9 +101,9 @@ const Tabs = () => {
               <Image
                 src={activeContent.image}
                 alt={`Image for ${activeContent.title}`}
-                layout="fill"
-                objectFit="contain"
-                className="rounded-md"
+                width={600}
+                height={600}
+                className="rounded-md object-contain w-full h-full"
               />
             </div>
 
