@@ -39,7 +39,7 @@ const NavBar = () => {
     const [isPending, startTransition] = useTransition();
 
         return (
-            <nav className={`navbar fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled ? 'navbar-scrolled backdrop-blur-lg bg-accent-dark/80 shadow-md' : 'bg-transparent'}`}>
+            <nav className={`navbar fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled ? 'navbar-scrolled backdrop-blur-lg bg-accent/80 shadow-md' : 'bg-transparent'}`}>
             <div className="navbar-content flex justify-between items-center h-16 mx-auto p-4">
                 <div className="logo flex items-center space-x-2">
                 <Link href="/">
@@ -63,7 +63,7 @@ const NavBar = () => {
                             </svg>
 
                         </div>
-                        <div className='font-bold text-lg cursor-pointer bg-gradient-to-r from-gray-500 to-slate-600 bg-clip-text text-transparent hover:from-sky-500 hover:to-blue-500 transition duration-600'>
+                        <div className='font-bold text-lg cursor-pointer bg-gradient-to-r from-slate-600 to-slate-800 bg-clip-text text-transparent hover:from-sky-500 hover:to-blue-500 transition duration-600'>
                             Supersqad<span className='font-normal'>studios</span>
                         </div>
                     </div>

@@ -5,7 +5,6 @@ import Faqs from "@/components/Faqs";
 import Sectors from "@/components/Sectors";
 import Image from "next/image";
 import Work from "@/components/Work";
-import Tabs from "@/components/Tabs";
 
 const Explore = () => {
     return (
@@ -28,12 +27,26 @@ const Explore = () => {
         </MaxWidthWrapper>
         </div>
 
+        <MaxWidthWrapper>
+      <div className="py-16 sm:py-24 flex flex-col mx-auto items-center justify-center gap-4">
+        <div className="mx-auto max-w-screen-md text-center">
+          <h2 className="text-base font-bold leading-7 text-blue-600">EXPLORE OUR WORK</h2>
+          <p className="mt-2 lg:text-4xl text-3xl font-bold tracking-tight text-gray-900">
+            Scale media and market like done
+          </p>
+          <p className="mt-6 text-gray-700">
+          Leverage our expertise in media management and technology operations, with unmatched quality content and tailored solutions to meet diverse media execution and marketing needs, driving success and growth for your brand.
+          </p>
+        </div>
+      </div>
+  </MaxWidthWrapper>
+
 <MaxWidthWrapper>
       <div id="core" className="py-24 sm:py-16 flex flex-col mx-auto items-center justify-center gap-4">
         <div className="mx-auto max-w-screen-lg text-center">
           <h2 className="text-base font-bold leading-7 text-blue-600">EXPLORE OUR WORK</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Scale your marketing and technology development
+            Scale marketing and technology like done
           </p>
           <p className="mt-6 text-gray-700 max-w-screen-sm mx-auto">
           Leverage our expertise in media management and technology operations, with unmatched quality content and tailored solutions to meet diverse media execution and marketing needs, driving success and growth for your brand.
@@ -42,11 +55,13 @@ const Explore = () => {
       </div>
   </MaxWidthWrapper>
 
+<Work/>
+
 <MaxWidthWrapper>
 <div className="bg-white py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
-          Trusted by the world&apos;s most innovative teams
+          Trusted by the world&apos;s most innovative teams around the world
         </h2>
         <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-fit sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
           <Image
@@ -81,15 +96,13 @@ const Explore = () => {
             className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 transition-transform transform grayscale duration-600 hover:grayscale-0 hover:scale-110"
             src="/webimgs/teamlogos/lg-logo.svg"
             alt="LG Logo"
-            width={24}
+            width={60}
             height={24}
           />
         </div>
       </div>
     </div>
 </MaxWidthWrapper>
-
-<Work/>
 
 {/* Popular Explore services, 3 sections divs */}
 

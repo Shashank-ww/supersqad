@@ -12,7 +12,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <>
-    <div className="max-w-screen bg-stone-100 shadow-inner">
+    <div className="bg-stone-100 shadow-inner">
     <MaxWidthWrapper>
     <div className='max-w-[1240px] mx-auto items-start justify-start px-4 py-16 grid lg:grid-cols-3 gap-8'>
         <div> 
@@ -82,18 +82,18 @@ const Footer = () => {
         </div>
         </div>
 </div>
-<div className='flex items-center justify-center mx-auto text-center border-t border-1 border-gray-700 text-muted-foreground'> 
+</MaxWidthWrapper>
+<div className='flex items-center justify-center text-center border-t border-gray-600 text-muted-foreground'> 
     <ul className='mx-auto hidden lg:flex lg:items-center py-2 text-xs'>
         <li className='p-1'>Terms of Service</li>  
         <li className='p-1'>GDPR</li>
         <li className='p-1'>Cookie Settings</li>
     </ul>
     <p className='py-4 px-2 mx-auto text-xs text-muted-foreground'>
-        <span>&copy; 2024 - 2026 Supersqad.com&#8482;</span> {'\n'} All Rights Reserved. 
+        <span>&copy; 2024 - 2025 Supersqad.com&#8482;</span> {'\n'} All Rights Reserved. 
         Developed by Werbex Inc.
     </p>
 </div>
-</MaxWidthWrapper>
 </div>
 </>
   );

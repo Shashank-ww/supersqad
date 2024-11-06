@@ -1,5 +1,4 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Image from 'next/image';
 
 import Stats from "@/components/Stats";
 import Testimonials from "@/components/testimonials";
@@ -11,24 +10,24 @@ const About = () => {
       <main className="relative flex flex-col min-h-screen">
       {/* Hero section with background image */}
       <div className="w-full h-[90vh] relative" style={{ 
-        backgroundImage: "url('https://images.unsplash.com/photo-1658455803229-814a2d1e8e0f')", 
+        backgroundImage: "url('https://images.unsplash.com/photo-1496664444929-8c75efb9546f')", 
         backgroundSize: "cover", 
         backgroundPosition: "center",
       }}>
         {/* Overlay with reduced opacity */}
-        <div className="absolute inset-0 bg-white opacity-70" style={{ 
-          backgroundImage: "linear-gradient(to bottom, rgba(14, 165, 255, 0.0), rgba(60, 130, 255, 0.8))"
+        <div className="absolute inset-0 bg-black opacity-50" style={{ 
+          backgroundImage: "linear-gradient(to bottom, rgba(40, 180, 255, 0.0), rgba(30, 120, 255, 1))"
         }}></div>
 
         {/* About Us */}
         <div className="absolute inset-0 px-2.5 flex items-center justify-center cursor-default">
         <div className="pb-4 flex flex-col z-1 text-center max-w-4xl mx-auto">
-          <p className="text-accent-foreground underline underline-offset-4 font-bold">ABOUT US</p>
-          <h1 className="tracking-tight font-bold lg:text-6xl md:text-5xl text-4xl lg:text-accent-foreground">
+          <p className="text-background underline underline-offset-4 font-bold">ABOUT US</p>
+          <h1 className="tracking-tight font-bold lg:text-6xl md:text-5xl text-4xl lg:text-background">
             The Supersqad<span className="font-normal">story</span>
           </h1>
-          <p className="my-4 text-md text-primary">
-            <i>Transforming Businesses, One Byte at a Time</i>
+          <p className="my-4 text-md text-secondary">
+            <i>Transforming <code>10100110</code>, One Byte at a Time</i>
           </p>
           </div>
         </div>
@@ -51,7 +50,7 @@ const About = () => {
                   </li>
                 <li className="py-2">With a vision where capitalism isn&apos;t about making profits – but empowering people to make informed decisions.<span className="font-bold"> At Supersqadstudios, we&apos;re using the power of technology to do just that.</span> 
                   </li>
-                <li className="py-2">Join us on our quest of the digital frontier. Reach out for consulting or coffee!
+                <li className="py-2">Join us on our quest of digital frontier. Reach out for consulting or maybe a cup of tea!
                   </li>    
               </ul>
             </div>
@@ -97,7 +96,7 @@ const About = () => {
       <div className='flex flex-col items-start justify-start text-center md:text-left md:pl-8'>
       <h1 className='lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-7 font-bold tracking-tight pb-6'>Digital solutions, real-world impact</h1>
       <p className="text-md ">
-        Our innovative strategies drive growth through creativity and results, crafting impactful marketing strategies and media production that drive real-world change. <br/> <br/> Join us in revolutionizing the future of media with sustainable, impactful digital solutions, visual storytelling that elevates brand while making a meaningful difference.
+        Our innovative strategies drive growth through creativity and results, crafting impactful marketing strategies and media production that drive real-world change. <br/> <br/> Join us in revolutionizing the future of digital media with impactful solutions, visual storytelling that elevates brand making a meaningful difference.
         </p>     
         <a href="/explore#work"> 
         <button className='bg-slate-500 w-[200px] rounded-md text-white hover:bg-blue-600 font-medium my-12 mx-auto md:mx-0 py-3'>
@@ -130,7 +129,7 @@ const About = () => {
   <div className="lg:pl-8 lg:pt-4">
         <div className="lg:max-w-lg">
           <h2 className="text-base font-bold leading-7 text-blue-400">WHO WE ARE</h2>
-          <h1 className="mt-2 text-3xl font-bold tracking-tight text-primary-foreground sm:text-3xl">Partner in delivering digital solutions to help you maximize online presence</h1>
+          <h1 className="mt-2 text-3xl font-bold tracking-tight text-primary-foreground sm:text-3xl">Partner in delivering digital solutions to help maximize online presence</h1>
           <p className="mt-6 leading-7 text-white">A go-to hub for businesses undergoing digital transformation, asset production or technology integration into all aspects of executable operations, client experiences, optimized processes, and data-driven decision-making.</p>
           <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-white lg:max-w-none">
             <div className="relative pl-12">
@@ -140,7 +139,7 @@ const About = () => {
               <dt className="inline-flex font-semibold text-white">
                 Media and Tech Studio
               </dt>
-              <dd className="inline-block font-light">Streamline services-ops, media production by outsourcing critical processes to experts.</dd>
+              <dd className="inline-block font-light">Streamline service-ops, media production or tailored marketing solutions by experts.</dd>
             </div>
             <div className="relative pl-12">
               <dt className="inline-flex font-semibold text-white">
@@ -150,7 +149,7 @@ const About = () => {
                 </svg>
                 Talented Offshore Experts
               </dt>
-              <dd className="inline-block font-light">Maximize productivity with Full-Time Equivalent (FTE) resources dedicated to your projects, seamlessly integrating with your existing teams.</dd>
+              <dd className="inline-block font-light">Maximize productivity with Full-Time Equivalent (FTE) resources dedicated to projects, while seamlessly integrating with your existing teams.</dd>
             </div>
           </dl>
         </div>

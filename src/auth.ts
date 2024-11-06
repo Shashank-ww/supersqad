@@ -1,33 +1,40 @@
-import NextAuth, { getServerSession } from "next-auth"
-
+import NextAuth, { getServerSession } from "next-auth";
 import { PrismaAdapter } from "@auth/prisma-adapter";
-
-import authConfig from "@/app/auth.config"
+import authConfig from "@/app/auth.config";
 import { db } from "@/lib/db";
 import { JWT } from "next-auth/jwt";
+import type { NextAuthOptions } from "next-auth";
 
-const authOptions = {
+export const authOptions: NextAuthOptions = {
+    adapter: PrismaAdapter(db),
+    session: { strategy: "jwt" },
+
     callbacks: {
-        async jwt ({ token }: {token: JWT}) {
+        async jwt({ token }: { token: JWT }) {
             console.log({ token });
             return token;
-        }
+        },
+        async session({ session, token }: any) {
+            session.user = token.user;
+            return session;
+        },
     },
-    adapter: PrismaAdapter (db),
-    session: { strategy: "jwt" },
-    ...authConfig
+
+    ...authConfig,
 };
 
-export const authHandler = (req: any, res: any) => NextAuth (req, res, authOptions);
+// NextAuth API route handler
+export const authHandler = (req: any, res: any) => NextAuth(req, res, authOptions);
 
+// Exporting GET and POST methods for Next.js API routes
 export const GET = authHandler;
 export const POST = authHandler;
 
-export const { signIn, signOut } = NextAuth(authOptions);
-
+// Function to get the server session
 export const auth = async () => {
     return await getServerSession(authOptions);
 };
+
 
 // export const {
 //     handlers: {GET, POST},

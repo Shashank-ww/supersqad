@@ -76,11 +76,6 @@ export default function Home() {
         <p className="max-w-screen-md text-center mb-6">
         Our approach is centered on leveraging data-driven consumer insights that drives competitive advantage, to reimagine and reinvent brands for digital-age of the coming
         </p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 font-medium text-center text-sm text-primary-background items-center rounded-md my-6">
-              <div className="p-4 border border-1 cursor-default rounded-md hover:bg-blue-400 hover:text-white transition-colors duration-100"> Global Timezones</div>
-              <div className="p-4 border border-1 cursor-default rounded-md hover:bg-blue-400 hover:text-white transition-colors duration-100"> Agile Management</div>
-              <div className="p-4 border border-1 cursor-default rounded-md hover:bg-blue-400 hover:text-white transition-colors duration-100"> Precision Planning</div>
-        </div>
         <Poweredby/>
     </div>
    </MaxWidthWrapper>
@@ -96,6 +91,11 @@ export default function Home() {
       <p className='mx-auto pb-4 items-center justify-center text-center md:max-w-screen-md'>
         With over 12 years of extensive experience in media management and technology operations, we excel in providing top-quality content and tailored development solutions to meet the diverse media and marketing needs. Our expertise ensures unparalleled customer-service and outcomes
       </p>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 font-medium text-center text-sm text-primary-background items-center rounded-md mt-6">
+              <div className="p-4 border border-1 cursor-default rounded-md hover:bg-blue-500 hover:text-white transition-colors duration-100"> Global Timezones</div>
+              <div className="p-4 border border-1 cursor-default rounded-md hover:bg-blue-500 hover:text-white transition-colors duration-100"> Agile Management</div>
+              <div className="p-4 border border-1 cursor-default rounded-md hover:bg-blue-500 hover:text-white transition-colors duration-100"> Precision Planning</div>
+        </div>
     </div>
 </MaxWidthWrapper>
 

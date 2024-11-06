@@ -159,7 +159,7 @@ const workItems: WorkItem[] = [
     { 
         id: 15, 
         image: '/webimgs/work/multichannel.gif', 
-        unoptimized: false,
+        unoptimized: true,
         description: 'Godrej festive campaign for Diwali on Instagram', 
         likes: 34, 
         link: '#', 
