@@ -20,7 +20,7 @@ export default function LoginPage() {
             backgroundPosition: "left",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent opacity-80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-40" />
 
         {/* Flex container to align text at the bottom */}
         <div className="flex flex-col items-end justify-end p-20  h-full">

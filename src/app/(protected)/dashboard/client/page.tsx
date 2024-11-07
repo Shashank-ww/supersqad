@@ -5,13 +5,16 @@ import { Button } from "@/components/ui/button";
 import UnderDev from "@/components/UnderDev";
 
 const DashboardPage = async () => {
+  // Fetch session on the server side
   const session = await auth();
 
   return (
     <>
       <MaxWidthWrapper>
         <div className="Dashboard h-[400px] flex flex-col items-center justify-center">
-          <pre className="mb-4 text-left">{JSON.stringify(session, null, 2)}</pre>
+          <pre className="mb-4 text-left">
+            {session ? JSON.stringify(session, null, 2) : "Loading..."}
+          </pre>
           <form
             action={async () => {
               "use server"; // Indicate this function runs on the server

@@ -27,20 +27,6 @@ const Explore = () => {
         </MaxWidthWrapper>
         </div>
 
-        <MaxWidthWrapper>
-      <div className="py-16 sm:py-24 flex flex-col mx-auto items-center justify-center gap-4">
-        <div className="mx-auto max-w-screen-md text-center">
-          <h2 className="text-base font-bold leading-7 text-blue-600">EXPLORE OUR WORK</h2>
-          <p className="mt-2 lg:text-4xl text-3xl font-bold tracking-tight text-gray-900">
-            Scale media and market like done
-          </p>
-          <p className="mt-6 text-gray-700">
-          Leverage our expertise in media management and technology operations, with unmatched quality content and tailored solutions to meet diverse media execution and marketing needs, driving success and growth for your brand.
-          </p>
-        </div>
-      </div>
-  </MaxWidthWrapper>
-
 <MaxWidthWrapper>
       <div id="core" className="py-24 sm:py-16 flex flex-col mx-auto items-center justify-center gap-4">
         <div className="mx-auto max-w-screen-lg text-center">

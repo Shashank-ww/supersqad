@@ -11,7 +11,7 @@ export const sendContactForm = async (data: any) => {
 
     if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.message || 'Something went wrong and we are checking!');
+        throw new Error(errorData.message || 'Oops! We are checking what went wrong!');
     }
 
     return await response.json();

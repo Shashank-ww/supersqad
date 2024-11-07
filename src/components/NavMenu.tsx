@@ -86,10 +86,10 @@ export function NavMenu () {
                   >
                     <AiFillCodeSandboxCircle className="h-8 w-8" />
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      WBX studios
+                      See Work
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Integrated media studio for advance production.
+                      Watch all action with integrated media and tech studio.
                     </p>
                   </a>
                 </NavigationMenuLink>

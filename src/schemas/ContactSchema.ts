@@ -8,9 +8,8 @@ export const ContactSchema = z.object({
     message: "Please enter a valid official email address"
   }),
   contact: z.string()
-        .min(10, {
-          message: "Contact is required (min 10 digits)"
-        }).regex(/^\d+$/, "Contact must be numeric"),
+            .regex(/^\d+$/, { message: "Contact must be numeric" })
+            .min(10, { message: "Contact number is required (min 10 digits)" }),
   industry: z.string().optional(),
   message: z.string().min(10, {
     message: "Message must be at least 10 characters long"

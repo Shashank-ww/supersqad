@@ -2,12 +2,11 @@
 
 // import { useState, useEffect } from 'react'
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Contact, { ContactForm } from "@/components/ContactForm"; // Ensure the component name starts with a capital letter
+import { ContactForm } from "@/components/ContactForm"; // Ensure the component name starts with a capital letter
 import { Button } from "@/components/ui/button";
-import { link } from "fs";
 import Callaction from "@/components/Callaction";
 
-const Resources = () => {
+const Contact = () => {
     return (
         <>
         <div className="w-full relative items-center justify-center" style={{ 
@@ -88,4 +87,4 @@ const Resources = () => {
     );
 };
 
-export default Resources;
+export default Contact;

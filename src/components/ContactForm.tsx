@@ -124,8 +124,8 @@ export const ContactForm = () => {
                                                 id="contact"
                                                 placeholder="Your Contact Number"
                                                 type="tel"
-                                                pattern="[0-9]*" 
-                                                inputMode="numeric" 
+                                                // pattern="[0-9]*" 
+                                                // inputMode="numeric" 
                                                 disabled={isPending}
                                             />
                                         </FormControl>

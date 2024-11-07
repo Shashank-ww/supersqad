@@ -21,7 +21,7 @@ import { Button } from '@/components/ui/button';
 import { FormError } from '@/components/auth/form-error';
 import { FormSuccess } from '@/components/auth/form-success';
 import { register } from '@/server/register';
-import { Icons } from '../ui/icons';
+import { Icons } from '@/components/ui/icons';
 
 
 export const RegisterForm = () => {
