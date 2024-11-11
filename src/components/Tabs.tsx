@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import MaxWidthWrapper from './MaxWidthWrapper';
-import { Button } from './ui/button';
+import { Button } from '@/components/ui/button';
 import Image from 'next/image'; // Assuming Next.js is used
 
 const TabsCard = [
@@ -114,7 +114,7 @@ const Tabs = () => {
                 {activeContent.title}
               </h1>
               <p className="py-2 leading-7">{activeContent.description}</p>
-              <a href='#work'>
+              <a href='/explore#work'>
               <Button variant={'outline'} className='mt-4'>
                 See work
               </Button>

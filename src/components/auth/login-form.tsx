@@ -1,4 +1,5 @@
 // components/LoginForm.tsx
+
 "use client";
 
 import React, { useState, useTransition } from "react";
@@ -7,10 +8,20 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { LoginSchema } from "@/schemas";
 import { z } from "zod";
+
 import { signIn } from "next-auth/react";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Form, FormControl, FormField, FormItem, FormLabel } from "@/components/ui/form";
+import 
+{ 
+    Form, 
+    FormControl, 
+    FormField, 
+    FormItem, 
+    FormLabel 
+} from "@/components/ui/form";
+
 import { FormError } from "@/components/auth/form-error";
 import { FormSuccess } from "@/components/auth/form-success";
 import { CardWrapper } from '@/components/auth/card-wrapper'
@@ -18,9 +29,9 @@ import { Icons } from "@/components/ui/icons";
 
 const LoginForm = () => {
     const router = useRouter();
-    const [error, setError] = useState<string | undefined>("");
-    const [success, setSuccess] = useState<string | undefined>("");
-    const [isPending, startTransition] = useTransition();
+    const [error, setError] = useState<string | undefined>("");  // Track errors
+    const [success, setSuccess] = useState<string | undefined>("");  // Track success message
+    const [isPending, startTransition] = useTransition();  // For async state updates
 
     const form = useForm<z.infer<typeof LoginSchema>>({
         resolver: zodResolver(LoginSchema),
@@ -29,34 +40,21 @@ const LoginForm = () => {
 
     const onSubmit = (values: z.infer<typeof LoginSchema>) => {
         startTransition(async () => {
-            setError("");
-            setSuccess("");
+            setError("");  // Clear previous errors
+            setSuccess("");  // Clear previous success messages
 
-            // Validate inputs through the API route
-            const res = await fetch("/api/login", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(values),
-            });
-
-            const data = await res.json();
-            if (data.error) {
-                setError(data.error);
-                return;
-            }
-
-            // Proceed with signIn if no validation errors
+            // Call NextAuth's signIn method
             const result = await signIn("credentials", {
-                redirect: false,
+                redirect: false,  // Prevent automatic redirect
                 email: values.email,
                 password: values.password,
             });
 
             if (result?.error) {
-                setError(result.error);
+                setError(result.error);  // Display error if login fails
             } else {
                 setSuccess("Login Successful! Redirecting...");
-                router.push("/dashboard/client");
+                router.push("/dashboard/client");  // Redirect to dashboard
             }
         });
     };

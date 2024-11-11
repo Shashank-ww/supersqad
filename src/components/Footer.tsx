@@ -16,7 +16,24 @@ const Footer = () => {
     <MaxWidthWrapper>
     <div className='max-w-[1240px] mx-auto items-start justify-start px-4 py-16 grid lg:grid-cols-3 gap-8'>
         <div> 
-            <h1 className='w-full text-3xl font-bold text-inherit cursor-default hover:text-blue-500'>Supersqad<span className='font-normal'>studios</span></h1>
+            <div>
+            <Link href="/">
+                    <div className="flex items-center cursor-pointer">
+                        <div className="FooterLogo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="48" height="48">
+                            <polygon points="402.65 269 312.65 269 327.96 197 237.96 197 222.65 269 207.35 341 297.35 341 282.04 413 372.04 413 387.35 341 402.65 269" fill="#06f"/>
+                            <polygon points="433.26 125 343.26 125 253.26 125 163.26 125 147.96 197 132.65 269 117.35 341 102.04 413 86.74 485 176.74 485 266.74 485 356.74 485 372.04 413 282.04 413 297.35 341 207.35 341 222.65 269 237.96 197 327.96 197 312.65 269 402.65 269 387.35 341 372.04 413 462.04 413 477.35 341 492.65 269 507.96 197 523.26 125 433.26 125" fill="#06f"/>
+                            <polyline points="372.04 413 387.35 341 402.65 269 312.65 269 327.96 197 237.96 197 222.65 269 207.35 341 297.35 341 282.04 413 372.04 413" fill="#fff"/>
+                            <polygon points="372.04 413 462.04 413 446.74 485 356.74 485 372.04 413" fill="none"/>
+                            </svg>
+                        </div>
+                        <div className='font-black text-lg tracking-tight cursor-pointer text-transparent bg-gradient-to-l from-zinc-700 to-slate-800 bg-clip-text transition ease-in-out duration-300 hover:from-blue-500 hover:to-sky-600'>
+                            <i className="pr-2">SUPASQAD.COM</i> 
+                        </div>
+                    </div>
+                </Link>
+            </div>
+            
             <p className='py-4 w-[80%] text-xs'>
             Outsource effortless media management and tech ops with our talented and ready to work resources.
             </p>

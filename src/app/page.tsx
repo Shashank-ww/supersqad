@@ -41,14 +41,14 @@ export default function Home() {
         <h1 className="font-bold lg:text-6xl md:text-5xl text-4xl tracking-tight bg-gradient-to-tr from-blue-600 to-sky-400 bg-clip-text text-transparent">
             Maximize digital excellence in a connected world 
         </h1>
-        <h2 className="mt-4 font-medium text-accent-foreground">Professional expertise for advance marketing</h2>
+        <h2 className="mt-4 font-medium text-accent-foreground">Professional expertise for advanced marketing</h2>
           <p className="my-4 text-md text-primary">
             Global center for media agencies, corporate, IT hubs and healthcare groups, looking to outsource autonomous tasks and talent
           </p>
           <div className="mt-4 text-center md:text-left">
             <Link href={"/contact"} passHref>
             <Button 
-            className="bg-blue-500 inline-block md:inline-block lg:block" 
+            className="bg-[#0066ff] inline-block md:inline-block lg:block hover:-skew-x-12 transition-transform ease-in duration-600" 
             variant="default"
             size="xl"
             >

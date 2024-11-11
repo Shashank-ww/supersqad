@@ -27,7 +27,7 @@ const About = () => {
             The Supersqad<span className="font-normal">story</span>
           </h1>
           <p className="my-4 text-md text-secondary">
-            <i>Transforming <code>10100110</code>, One Byte at a Time</i>
+            <i>Transforming <code>10100110</code>, One Byte a Time</i>
           </p>
           </div>
         </div>
